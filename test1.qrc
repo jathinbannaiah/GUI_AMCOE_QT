@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>laser.jpg</file>
+  </qresource>
+</RCC>
