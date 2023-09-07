@@ -13,15 +13,19 @@ params = {"apikey": 'B508534ED20348F090B4D0AD637D3660'}
 # }
 
 cmd = {
-    "command":"FORCE_MOVE",
-    "STEPPER": 'steper_y',
-    "DISTANCE": '20',
-    "VELOCITY": '20'
+    "command":"jog",
+    "x":10,
+    "y":-5,
+    "z":0.02
 }
-#request = requests.post(url="http://10.114.56.121/api/printer/command", params=params, json=cmd)
+request = requests.post(url="http://10.114.56.128/api/printer/command", params=params, json=cmd)
 # data = request.json()['job']
 
-get_requests = requests.get(url="http://10.114.56.121/api/printer/chamber",params=params)
+#get_requests = requests.get(url="http://10.114.56.128/api/printer/chamber",params=params)
 
-get_requests.raise_for_status()
-print(get_requests.text)
+# get_requests.raise_for_status()
+# get_requests = get_requests.json()
+# print(get_requests["chamber"]["actual"])
+print(request.text)
+request.raise_for_status()
+
