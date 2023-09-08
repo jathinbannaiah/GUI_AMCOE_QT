@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1080</height>
+    <height>1066</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -2274,7 +2274,8 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 0px;
+color:rgb(0,0,0);</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="lineEdit_7">
@@ -2288,7 +2289,8 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 0px;
+color:rgb(0,0,0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_30">
@@ -2377,7 +2379,8 @@ background-color: rgb( 255, 255);HEAVY WIDE-HEADED RIGHT ARROWHEAVY WIDE-HEADED 
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 0px;
+color:rgb(0,0,0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_112">
@@ -2507,7 +2510,8 @@ background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 0px;
+color:rgb(0,0,0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_82">
@@ -2545,7 +2549,8 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 0px;
+color:rgb(0,0,0);</string>
          </property>
         </widget>
         <zorder>label_31</zorder>
@@ -2574,7 +2579,7 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
           <x>460</x>
           <y>70</y>
           <width>371</width>
-          <height>401</height>
+          <height>611</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -2616,9 +2621,9 @@ border-radius: 10px;  /* Change the value as needed */
         <widget class="QLabel" name="label_44">
          <property name="geometry">
           <rect>
-           <x>130</x>
-           <y>160</y>
-           <width>51</width>
+           <x>20</x>
+           <y>90</y>
+           <width>41</width>
            <height>31</height>
           </rect>
          </property>
@@ -2637,70 +2642,18 @@ border-radius: 10px;  /* Change the value as needed */
           <string>RPM:</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_45">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>70</y>
-           <width>91</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Segoe MDL2 Assets</family>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px </string>
-         </property>
-         <property name="text">
-          <string>DIRECTION:</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="RollerDir">
-         <property name="geometry">
-          <rect>
-           <x>100</x>
-           <y>80</y>
-           <width>151</width>
-           <height>22</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
-         </property>
-         <item>
-          <property name="text">
-           <string/>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>clockwise</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>anti-clockwise</string>
-          </property>
-         </item>
-        </widget>
         <widget class="QLineEdit" name="RollerRpm">
          <property name="geometry">
           <rect>
-           <x>190</x>
-           <y>170</y>
+           <x>90</x>
+           <y>100</y>
            <width>61</width>
            <height>20</height>
           </rect>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
+color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          </property>
         </widget>
@@ -2708,7 +2661,7 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>160</y>
+           <y>230</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2731,7 +2684,7 @@ background-color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>220</y>
+           <y>410</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2754,7 +2707,7 @@ background-color: rgb(0,0,0);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>280</y>
+           <y>470</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2767,7 +2720,7 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>stop.jpg</pixmap>
+          <pixmap>stop.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -2777,7 +2730,7 @@ background-color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>160</y>
+           <y>230</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2794,7 +2747,7 @@ background-color: rgb( 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>280</y>
+           <y>470</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2811,7 +2764,7 @@ background-color: rgb( 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>220</y>
+           <y>410</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2822,6 +2775,233 @@ background-color: rgb( 255, 255);</string>
          </property>
          <property name="text">
           <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_127">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>60</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px </string>
+         </property>
+         <property name="text">
+          <string>Required</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_128">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>60</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px </string>
+         </property>
+         <property name="text">
+          <string>Current</string>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="CurrentRpm">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>100</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0px</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>130</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px </string>
+         </property>
+         <property name="text">
+          <string>Torque:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="RollerTorque">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>140</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px ;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="CurrentTorque">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>140</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0px</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_129">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>290</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>clockwise.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_130">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>350</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 0px;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>anticlock.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="RollerForward">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>290</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0;
+background-color: rgb( 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="RollerBackward">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>350</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0;
+background-color: rgb( 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="SetRpm">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>100</y>
+           <width>31</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>set</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="SetTorque">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>140</y>
+           <width>31</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>set</string>
          </property>
         </widget>
        </widget>
