@@ -451,6 +451,11 @@ color: rgb(170, 255, 255);</string>
         <height>911</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Segoe MDL2 Assets</family>
+       </font>
+      </property>
       <property name="toolTipDuration">
        <number>2</number>
       </property>
@@ -463,7 +468,7 @@ border: 1px solid rgb(255, 255, 255);
        <number>5</number>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QFrame" name="frame_2">
@@ -2149,6 +2154,134 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
         </property>
         <property name="text">
          <string>HOME</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Zsens3">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>531</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Zsens2">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>640</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Zsens1">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>750</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Zsens0">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>870</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_70">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>530</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>Z3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_86">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>640</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>Z2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_87">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>750</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>Z1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_88">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>870</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>Z0</string>
         </property>
        </widget>
       </widget>
@@ -4283,27 +4416,11 @@ border: 0px
          <string>ENVIRONMENT MANAGEMENT</string>
         </property>
        </widget>
-       <widget class="QProgressBar" name="progressBar_3">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>150</y>
-          <width>191</width>
-          <height>181</height>
-         </rect>
-        </property>
-        <property name="value">
-         <number>80</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>230</y>
+          <x>90</x>
+          <y>250</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -4328,11 +4445,14 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QProgressBar" name="progressBar_4">
         <property name="geometry">
          <rect>
-          <x>100</x>
-          <y>380</y>
+          <x>40</x>
+          <y>410</y>
           <width>191</width>
           <height>181</height>
          </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
         </property>
         <property name="value">
          <number>50</number>
@@ -4340,28 +4460,40 @@ background-color: rgb(, 0, 0);</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
+        <property name="format">
+         <string>%pppm</string>
+        </property>
        </widget>
        <widget class="QProgressBar" name="progressBar_5">
         <property name="geometry">
          <rect>
-          <x>100</x>
-          <y>620</y>
+          <x>40</x>
+          <y>670</y>
           <width>191</width>
           <height>181</height>
          </rect>
         </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
         <property name="value">
          <number>70</number>
         </property>
+        <property name="textVisible">
+         <bool>true</bool>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
+        </property>
+        <property name="format">
+         <string>%pppm</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_6">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>720</y>
+          <x>90</x>
+          <y>770</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -4386,8 +4518,8 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QLabel" name="label_7">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>480</y>
+          <x>100</x>
+          <y>510</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -4412,7 +4544,7 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>280</x>
           <y>150</y>
           <width>671</width>
           <height>391</height>
@@ -4446,9 +4578,9 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_7">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>580</y>
-          <width>291</width>
+          <x>280</x>
+          <y>570</y>
+          <width>161</width>
           <height>281</height>
          </rect>
         </property>
@@ -4479,8 +4611,8 @@ background-color: rgb(, 0, 0);</string>
         <widget class="QSlider" name="verticalSlider">
          <property name="geometry">
           <rect>
-           <x>40</x>
-           <y>70</y>
+           <x>60</x>
+           <y>60</y>
            <width>22</width>
            <height>181</height>
           </rect>
@@ -4496,9 +4628,9 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_9">
         <property name="geometry">
          <rect>
-          <x>700</x>
-          <y>580</y>
-          <width>291</width>
+          <x>520</x>
+          <y>570</y>
+          <width>151</width>
           <height>281</height>
          </rect>
         </property>
@@ -4529,8 +4661,8 @@ background-color: rgb(, 0, 0);</string>
         <widget class="QSlider" name="verticalSlider_3">
          <property name="geometry">
           <rect>
-           <x>40</x>
-           <y>70</y>
+           <x>60</x>
+           <y>60</y>
            <width>22</width>
            <height>181</height>
           </rect>
@@ -4546,9 +4678,9 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_8">
         <property name="geometry">
          <rect>
-          <x>1040</x>
-          <y>580</y>
-          <width>291</width>
+          <x>760</x>
+          <y>570</y>
+          <width>151</width>
           <height>281</height>
          </rect>
         </property>
@@ -4579,8 +4711,8 @@ background-color: rgb(, 0, 0);</string>
         <widget class="QSlider" name="verticalSlider_2">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>70</y>
+           <x>60</x>
+           <y>60</y>
            <width>22</width>
            <height>181</height>
           </rect>
@@ -4596,8 +4728,8 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_10">
         <property name="geometry">
          <rect>
-          <x>1150</x>
-          <y>180</y>
+          <x>1090</x>
+          <y>160</y>
           <width>151</width>
           <height>81</height>
          </rect>
@@ -4639,7 +4771,7 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_11">
         <property name="geometry">
          <rect>
-          <x>1150</x>
+          <x>1090</x>
           <y>280</y>
           <width>151</width>
           <height>81</height>
@@ -4682,8 +4814,8 @@ background-color: rgb(, 0, 0);</string>
        <widget class="QFrame" name="frame_12">
         <property name="geometry">
          <rect>
-          <x>1150</x>
-          <y>380</y>
+          <x>1090</x>
+          <y>410</y>
           <width>151</width>
           <height>81</height>
          </rect>
@@ -4722,6 +4854,309 @@ background-color: rgb(, 0, 0);</string>
          </property>
         </widget>
        </widget>
+       <widget class="QFrame" name="frame_19">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>570</y>
+          <width>421</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>CHILLER</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>47</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;</string>
+         </property>
+         <property name="text">
+          <string>STATUS:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_42">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>80</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:0px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_69">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>111</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;</string>
+         </property>
+         <property name="text">
+          <string>LASER TEMPERATURE:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_89">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;</string>
+         </property>
+         <property name="text">
+          <string>SCANNER TEMPERATURE:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_90">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>120</y>
+           <width>47</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string> </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_91">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>160</y>
+           <width>47</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_92">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>120</y>
+           <width>111</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;</string>
+         </property>
+         <property name="text">
+          <string>LASER THRESHOLD:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_131">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>160</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;</string>
+         </property>
+         <property name="text">
+          <string>SCANNER THRESHOLD:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_132">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>160</y>
+           <width>47</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_133">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>120</y>
+           <width>47</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">BORDER:0PX;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>200</y>
+           <width>121</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe MDL2 Assets</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>ON/OFF</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QProgressBar" name="progressBar_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>160</y>
+          <width>191</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="format">
+         <string>%pppm</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_134">
+        <property name="geometry">
+         <rect>
+          <x>1200</x>
+          <y>860</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>DOOR: OPEN/CLOSED</string>
+        </property>
+       </widget>
+       <zorder>progressBar_7</zorder>
+       <zorder>label_93</zorder>
+       <zorder>label_4</zorder>
+       <zorder>progressBar_4</zorder>
+       <zorder>progressBar_5</zorder>
+       <zorder>label_6</zorder>
+       <zorder>label_7</zorder>
+       <zorder>frame</zorder>
+       <zorder>frame_7</zorder>
+       <zorder>frame_9</zorder>
+       <zorder>frame_8</zorder>
+       <zorder>frame_10</zorder>
+       <zorder>frame_11</zorder>
+       <zorder>frame_12</zorder>
+       <zorder>frame_19</zorder>
+       <zorder>label_134</zorder>
       </widget>
      </widget>
      <widget class="QPushButton" name="pushButton_4">
