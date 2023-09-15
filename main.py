@@ -112,6 +112,7 @@ class GUI(QMainWindow):
 
     def moveLoadingMotor(self, auto, direction=''):
         self.update_parameters()
+        print(self.slider_value)
 
         if not auto:
             try:
@@ -191,10 +192,45 @@ class GUI(QMainWindow):
             except:
                 pass
 
+        if self.slider_value < 25 :
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 25 <= self.slider_value < 50:
+            print("slider if 1")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 50 <= self.slider_value < 75:
+            print("slider if 2")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 75 <= self.slider_value < 90:
+            print("slider if 3")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 90 <= self.slider_value <= 100:
+            print("slider if 4")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: green")
+
         self.update_parameters()
 
     def moveZaxis(self, auto, direction=""):
         self.update_parameters()
+        print(self.slider_value)
 
         if not auto:
             try:
@@ -275,6 +311,40 @@ class GUI(QMainWindow):
                 # request.raise_for_status()
             except:
                 pass
+
+        if self.slider_value < 25 :
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 25 <= self.slider_value < 50:
+            print("slider if 1")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 50 <= self.slider_value < 75:
+            print("slider if 2")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 75 <= self.slider_value < 90:
+            print("slider if 3")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: green")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: black")
+
+        elif 90 <= self.slider_value <= 100:
+            print("slider if 4")
+            self.MainWindow.Zsens0.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens1.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens2.setStyleSheet("background-color: black")
+            self.MainWindow.Zsens3.setStyleSheet("background-color: green")
 
         self.update_parameters()
 
