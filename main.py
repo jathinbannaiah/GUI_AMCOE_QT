@@ -49,24 +49,30 @@ class GUI(QMainWindow):
             # PARAMETERS
             self.BedTempFlag = False
             self.VolumeTempFlag = False
+            self.RHopperTempFlag = False
+            self.LHopperTempFlag = False
             self.ChamberTempFlag = False
+
             self.currentBedTemp = None
             self.currentChamTemp = None
             self.currentVolTemp = None
 
+            self.LHopperTemperature = None
+            self.RHopperTemperature = None
+
             #LEFT HOPPER
-            self.MainWindow.LHopperMove.clicked.connect(lambda: self.move_Lhopper())
-            self.MainWindow.LHopperMUp.clicked.connect(lambda: self.move_Lhopper("Up"))
-            self.MainWindow.LHopperMDown.clicked.connect(lambda: self.move_Lhopper("Down"))
-            self.MainWindow.LHopperHome.clicked.connect(lambda: self.move_Lhopper("Home"))
-            self.MainWindow.LHopperHeater.clicked.connect(lambda: self.hopperTemperatureControl())
+            self.MainWindow.LHopperMove.clicked.connect(lambda: self.move_Lhopper("move"))
+            self.MainWindow.LHopperMUp.clicked.connect(lambda: self.move_Lhopper("out"))
+            self.MainWindow.LHopperMDown.clicked.connect(lambda: self.move_Lhopper("in"))
+            self.MainWindow.LHopperHome.clicked.connect(lambda: self.move_Lhopper("home"))
+            self.MainWindow.LHopperHeater.clicked.connect(lambda: self.hopperTemperatureControl("left"))
 
             #RIGHT HOPPER
-            self.MainWindow.RHopperMove.clicked.connect(lambda: self.move_Rhopper())
-            self.MainWindow.RHopperMUp.clicked.connect(lambda: self.move_Rhopper("Up"))
-            self.MainWindow.RHopperMDown.clicked.connect(lambda: self.move_Rhopper("Down"))
-            self.MainWindow.RHopperHome.clicked.connect(lambda: self.move_Rhopper("Home"))
-            self.MainWindow.RHopperHeater.clicked.connect(lambda: self.hopperTemperatureControl())
+            self.MainWindow.RHopperMove.clicked.connect(lambda: self.move_Rhopper("move"))
+            self.MainWindow.RHopperMUp.clicked.connect(lambda: self.move_Rhopper("out"))
+            self.MainWindow.RHopperMDown.clicked.connect(lambda: self.move_Rhopper("in"))
+            self.MainWindow.RHopperHome.clicked.connect(lambda: self.move_Rhopper("home"))
+            self.MainWindow.RHopperHeater.clicked.connect(lambda: self.hopperTemperatureControl("right"))
 
 
             # Z-AXIS
@@ -498,24 +504,117 @@ class GUI(QMainWindow):
 
     def move_Lhopper(self,move):
         self.update_parameters()
-        if move == None:
+        if move == 'move':
+
             #From the Input
-            pass
+            print(self.MainWindow.LHopperAstep.text(),self.MainWindow.LHopperNum.text())
+            step_size = self.MainWindow.LHopperAstep.text()
+            distance = self.MainWindow.LHopperNum.text()
+
+            cmd = {
+                "command": "MOVE_HOPPER",
+                "step-size": step_size,
+                "delay" : 10,
+                "distance": distance
+            }
+            # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+            # print("Bed Heating API Status:")
+            # request.raise_for_status()
+
+
         else:
-            #From the Buttons
-            pass
+            close_distance = self.MainWindow.LHopperDownStep.text()
+            open_distance = self.MainWindow.LHopperUpStep.text()
+            if move == 'home':
+                pass
+            elif move == 'in':
+                cmd = {
+                    "command": "MOVE_HOPPER",
+                    "step-size": 10,
+                    "delay": 10,
+                    "distance": open_distance
+                }
+                # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+                # print("Bed Heating API Status:")
+                # request.raise_for_status()
+
+            else:
+                cmd = {
+                    "command": "MOVE_HOPPER",
+                    "step-size": 10,
+                    "delay": 10,
+                    "distance": close_distance
+                }
+                # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+                # print("Bed Heating API Status:")
+                # request.raise_for_status()
+
         self.update_parameters()
     def move_Rhopper(self,move):
         self.update_parameters()
-        if move == None:
-            #From the Input
-            pass
+        if move == 'move':
+
+            # From the Input
+            print(self.MainWindow.RHopperAstep.text(), self.MainWindow.RHopperNum.text())
+            step_size = self.MainWindow.RHopperAstep.text()
+            distance = self.MainWindow.RHopperNum.text()
+
+            cmd = {
+                "command": "MOVE_HOPPER",
+                "step-size": step_size,
+                "delay": 10,
+                "distance": distance
+            }
+            # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+            # print("Bed Heating API Status:")
+            # request.raise_for_status()
+
+
         else:
-            #From the Buttons
-            pass
+            close_distance = self.MainWindow.RHopperDownStep.text()
+            open_distance = self.MainWindow.RHopperUpStep.text()
+            if move == 'home':
+                pass
+            elif move == 'in':
+                cmd = {
+                    "command": "MOVE_HOPPER",
+                    "step-size": 10,
+                    "delay": 10,
+                    "distance": open_distance
+                }
+                # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+                # print("Bed Heating API Status:")
+                # request.raise_for_status()
+
+            else:
+                cmd = {
+                    "command": "MOVE_HOPPER",
+                    "step-size": 10,
+                    "delay": 10,
+                    "distance": close_distance
+                }
+                # request = requests.post(url=f"http://{self.api_endpoint}/api/printer/bed", params=self.params, json=cmd)
+                # print("Bed Heating API Status:")
+                # request.raise_for_status()
+
         self.update_parameters()
-    def hopperTemperatureControl(self):
-        pass
+    def hopperTemperatureControl(self,hopper):
+        if hopper == "left":
+            if self.LHopperTempFlag == False:
+                self.LHopperTempFlag = True
+                self.MainWindow.LHopperHeater.setStyleSheet("background-color: green")
+            else:
+                self.LHopperTempFlag = False
+                self.MainWindow.LHopperHeater.setStyleSheet("background-color: black")
+        else:
+            if self.RHopperTempFlag == False:
+                self.RHopperTempFlag = True
+                self.MainWindow.RHopperHeater.setStyleSheet("background-color: green")
+            else:
+                self.RHopperTempFlag = False
+                self.MainWindow.RHopperHeater.setStyleSheet("background-color: black")
+
+
 
 def main():
     app = QApplication([])
