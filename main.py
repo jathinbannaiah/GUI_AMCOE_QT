@@ -383,7 +383,7 @@ class GUI(QMainWindow):
             self.MainWindow.BedHeater.setStyleSheet("background-color: green")
         else:
             self.BedTempFlag = False
-            self.MainWindow.BedHeater.setStyleSheet("background-color:black")  # RED:rgb(160,0,50)
+            self.MainWindow.BedHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")  # RED:rgb(160,0,50)
 
 
         if direct:
@@ -410,7 +410,7 @@ class GUI(QMainWindow):
 
         else:
             self.VolumeTempFlag = False
-            self.MainWindow.VolumeHeater.setStyleSheet("background-color: black")
+            self.MainWindow.VolumeHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")
 
         try:
             if not direct:
@@ -429,7 +429,7 @@ class GUI(QMainWindow):
 
         else:
             self.ChamberTempFlag = False
-            self.MainWindow.ChamberHeater.setStyleSheet("background-color: black")
+            self.MainWindow.ChamberHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")
 
         try:
             if not direct:
@@ -605,14 +605,14 @@ class GUI(QMainWindow):
                 self.MainWindow.LHopperHeater.setStyleSheet("background-color: green")
             else:
                 self.LHopperTempFlag = False
-                self.MainWindow.LHopperHeater.setStyleSheet("background-color: black")
+                self.MainWindow.LHopperHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")
         else:
             if self.RHopperTempFlag == False:
                 self.RHopperTempFlag = True
                 self.MainWindow.RHopperHeater.setStyleSheet("background-color: green")
             else:
                 self.RHopperTempFlag = False
-                self.MainWindow.RHopperHeater.setStyleSheet("background-color: black")
+                self.MainWindow.RHopperHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")
 
 
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1066</height>
+    <width>1900</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,13 +23,14 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>-40</x>
       <y>-10</y>
-      <width>1961</width>
+      <width>1920</width>
       <height>1041</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0,0,0);
 color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0.550545, y1:0.721, x2:0.881, y2:0.130682, stop:0 rgba(0, 0, 72, 255), stop:1 rgba(0, 0, 0, 255));
 </string>
     </property>
     <property name="tabPosition">
@@ -75,9 +76,9 @@ color: rgb(170, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>90</y>
-        <width>1861</width>
-        <height>931</height>
+        <y>100</y>
+        <width>1791</width>
+        <height>921</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -336,7 +337,7 @@ background-color: rgb(, 255, 255);</string>
      <widget class="QDateTimeEdit" name="dateTimeEdit">
       <property name="geometry">
        <rect>
-        <x>1890</x>
+        <x>1870</x>
         <y>10</y>
         <width>101</width>
         <height>22</height>
@@ -378,7 +379,7 @@ background-color: rgb(, 255, 255);</string>
      <widget class="QLabel" name="label_36">
       <property name="geometry">
        <rect>
-        <x>1850</x>
+        <x>1830</x>
         <y>10</y>
         <width>31</width>
         <height>31</height>
@@ -397,7 +398,7 @@ background-color: rgb(, 255, 255);</string>
      <widget class="QPushButton" name="pushButton_18">
       <property name="geometry">
        <rect>
-        <x>1850</x>
+        <x>1830</x>
         <y>10</y>
         <width>31</width>
         <height>31</height>
@@ -436,7 +437,7 @@ background-color: rgb(, 255, 255);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb( 0, 0);
-color: rgb(170, 255, 255);</string>
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
       </property>
       <property name="text">
        <string>SYSTEM</string>
@@ -448,7 +449,7 @@ color: rgb(170, 255, 255);</string>
         <x>70</x>
         <y>100</y>
         <width>1401</width>
-        <height>911</height>
+        <height>891</height>
        </rect>
       </property>
       <property name="font">
@@ -460,7 +461,7 @@ color: rgb(170, 255, 255);</string>
        <number>2</number>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0,0,0);
+       <string notr="true">background-color: rgb(5, 60, 76);
 border: 1px solid rgb(255, 255, 255);
 </string>
       </property>
@@ -485,7 +486,7 @@ border: 1px solid rgb(255, 255, 255);
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
@@ -514,7 +515,8 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px; 
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>LOADING MOTOR</string>
@@ -538,7 +540,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>CURRENT POSITION:</string>
@@ -562,7 +564,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>MOVE TO:</string>
@@ -599,7 +601,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));; </string>
          </property>
          <property name="text">
           <string>STEP SIZE:</string>
@@ -621,8 +623,8 @@ border-radius: 10px;  /* Change the value as needed */
         <widget class="QPushButton" name="ZmotorOk">
          <property name="geometry">
           <rect>
-           <x>110</x>
-           <y>250</y>
+           <x>120</x>
+           <y>240</y>
            <width>71</width>
            <height>23</height>
           </rect>
@@ -633,6 +635,15 @@ color: rgb(0, 0, 0);border: 0px ;border-radius: 0px;</string>
          </property>
          <property name="text">
           <string>OK</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
          </property>
         </widget>
         <widget class="QLabel" name="label_21">
@@ -778,7 +789,7 @@ background-color: rgb(255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>MANUAL CONTROL</string>
@@ -848,7 +859,7 @@ background-color: rgb(255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));;</string>
          </property>
          <property name="text">
           <string>SPEED:</string>
@@ -885,7 +896,7 @@ background-color: rgb(255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>STEP SIZE:</string>
@@ -923,7 +934,7 @@ color: rgb(0, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>STEP SIZE:</string>
@@ -1068,7 +1079,7 @@ background-color: rgb(255, 255);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 0px </string>
+         <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
         </property>
         <property name="text">
          <string>Z-AXIS CONTROL</string>
@@ -1090,7 +1101,7 @@ background-color: rgb(255, 255);</string>
          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(0,0,0);
 border-radius: 10px;  /* Change the value as needed */
-</string>
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -1117,7 +1128,8 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px; 
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>Z-AXIS MOTOR</string>
@@ -1141,7 +1153,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>CURRENT POSITION:</string>
@@ -1165,7 +1177,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>MOVE-UP:</string>
@@ -1189,7 +1201,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>MOVE-DOWN:</string>
@@ -1367,7 +1379,7 @@ background-color: rgb(255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>MANUAL CONTROL</string>
@@ -1414,7 +1426,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Speed:</string>
@@ -1451,7 +1463,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>STEP SIZE:</string>
@@ -1488,7 +1500,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>STEP SIZE:</string>
@@ -1701,7 +1713,7 @@ background-color: rgb(0,0,0);
 border-color: rgb(85, 255, 255);
 border-radius: 10px;  /* Change the value as needed */
 
-</string>
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -1730,7 +1742,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(255,255,255);
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));
 border: 0px 
 </string>
          </property>
@@ -1756,7 +1768,8 @@ border: 0px
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>BED:</string>
@@ -1780,7 +1793,7 @@ border: 0px
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>BUILD VOLUME:</string>
@@ -1804,7 +1817,7 @@ border: 0px
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>PROCESS CHAMBER:</string>
@@ -1869,7 +1882,7 @@ border: 0px
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Current</string>
@@ -1892,7 +1905,7 @@ border: 0px
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Required</string>
@@ -1950,7 +1963,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);;border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -1966,7 +1979,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -1982,7 +1995,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -1998,7 +2011,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -2014,7 +2027,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -2030,7 +2043,7 @@ border-radius:10px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0,0,0);border: 0px </string>
+          <string notr="true">background-color: rgb(3, 96, 106);border: 0px </string>
          </property>
          <property name="text">
           <string>°C</string>
@@ -2039,8 +2052,8 @@ border-radius:10px;
         <widget class="QPushButton" name="TempControlOk">
          <property name="geometry">
           <rect>
-           <x>150</x>
-           <y>220</y>
+           <x>160</x>
+           <y>230</y>
            <width>75</width>
            <height>23</height>
           </rect>
@@ -2068,6 +2081,9 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
            <height>81</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
+         </property>
          <property name="text">
           <string>BED  HEATER</string>
          </property>
@@ -2080,6 +2096,9 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
            <width>111</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>BUILD VOLUME 
@@ -2094,6 +2113,9 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
            <width>111</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>PROCESS CHAMBER
@@ -2125,6 +2147,9 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
           <width>231</width>
           <height>371</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
         </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
@@ -2297,7 +2322,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
@@ -2325,7 +2350,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>RECOATER CONTROL</string>
@@ -2349,7 +2374,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>CURRENT POSITION:</string>
@@ -2373,7 +2398,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>NUMBER OF CYCLES:</string>
@@ -2407,7 +2432,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;
+background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
@@ -2422,15 +2447,15 @@ color:rgb(0,0,0);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;
+background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_30">
          <property name="geometry">
           <rect>
-           <x>60</x>
-           <y>280</y>
+           <x>30</x>
+           <y>290</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2495,7 +2520,7 @@ background-color: rgb( 255, 255);HEAVY WIDE-HEADED RIGHT ARROWHEAVY WIDE-HEADED 
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>SPEED:</string>
@@ -2512,7 +2537,7 @@ background-color: rgb( 255, 255);HEAVY WIDE-HEADED RIGHT ARROWHEAVY WIDE-HEADED 
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;
+background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
@@ -2626,7 +2651,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>SPEED:</string>
@@ -2643,7 +2668,7 @@ background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;
+background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
@@ -2665,7 +2690,7 @@ color:rgb(0,0,0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>SPEED:</string>
@@ -2682,7 +2707,7 @@ color:rgb(0,0,0);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;
+background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
@@ -2712,12 +2737,12 @@ color:rgb(0,0,0);</string>
           <x>460</x>
           <y>70</y>
           <width>371</width>
-          <height>611</height>
+          <height>621</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
@@ -2745,7 +2770,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>ROLLER CONTROL</string>
@@ -2769,7 +2794,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>RPM:</string>
@@ -2787,30 +2812,7 @@ border-radius: 10px;  /* Change the value as needed */
          <property name="styleSheet">
           <string notr="true">border: 1px ;
 color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_124">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>230</y>
-           <width>51</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px;
-background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>play.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
+background-color: rgb(255, 255, 255);border-radius: 10px;</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_125">
@@ -2869,8 +2871,10 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0;
-background-color: rgb( 255, 255);</string>
+          <string notr="true">border:10;
+background-color: rgb( 255, 255);
+border-radius:10px
+</string>
          </property>
          <property name="text">
           <string/>
@@ -2927,7 +2931,7 @@ background-color: rgb( 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Required</string>
@@ -2950,7 +2954,7 @@ background-color: rgb( 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Current</string>
@@ -2987,7 +2991,7 @@ background-color: rgb( 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>Torque:</string>
@@ -3005,7 +3009,7 @@ background-color: rgb( 255, 255);</string>
          <property name="styleSheet">
           <string notr="true">border: 1px ;
 color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 10px;</string>
          </property>
         </widget>
         <widget class="QLCDNumber" name="CurrentTorque">
@@ -3077,8 +3081,9 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0;
-background-color: rgb( 255, 255);</string>
+          <string notr="true">border:10;
+background-color: rgb( 255, 255);
+border-radius:10px;</string>
          </property>
          <property name="text">
           <string/>
@@ -3137,6 +3142,25 @@ color: rgb(0, 0, 0);</string>
           <string>set</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_58">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>230</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>play.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
        </widget>
        <widget class="QDial" name="dial">
         <property name="geometry">
@@ -3153,7 +3177,7 @@ color: rgb(0, 0, 0);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(1, 197, 100);</string>
+         <string notr="true">background-color: rgb(6, 150, 152);</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_34">
@@ -3174,7 +3198,7 @@ color: rgb(0, 0, 0);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 0px </string>
+         <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
         </property>
         <property name="text">
          <string>RECOATER SPEED CONTROL</string>
@@ -3228,7 +3252,7 @@ color: rgb(0, 0, 0);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 0px </string>
+         <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
         </property>
         <property name="text">
          <string>SINGLE STEP:</string>
@@ -3239,13 +3263,13 @@ color: rgb(0, 0, 0);</string>
          <rect>
           <x>1150</x>
           <y>610</y>
-          <width>41</width>
-          <height>31</height>
+          <width>51</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px ;
-background-color: rgb(255, 255, 255);border-radius: 0px;</string>
+background-color: rgb(255, 255, 255);border-radius: 10px;</string>
         </property>
        </widget>
        <widget class="QDial" name="dial_2">
@@ -3258,7 +3282,7 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(1, 197, 100);</string>
+         <string notr="true">background-color: rgb(6, 150, 152);</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_35">
@@ -3279,7 +3303,7 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 0px </string>
+         <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
         </property>
         <property name="text">
          <string>ROLLER SPEED CONTROL</string>
@@ -3306,8 +3330,7 @@ background-color: rgb(255, 255, 255);border-radius: 0px;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
-border-radius: 10px;  /* Change the value as needed */
+background-color: rgb(3, 96, 106);border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
         <property name="frameShape">
@@ -3455,7 +3478,7 @@ background-color: rgb(, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -3479,7 +3502,7 @@ background-color: rgb(, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -3706,7 +3729,7 @@ background-color: rgb(, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -3730,7 +3753,7 @@ background-color: rgb(, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -3860,7 +3883,7 @@ background-color: rgb(255, 85, 127);
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
@@ -3888,7 +3911,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>TEMPERATURE CONTROL</string>
@@ -3912,7 +3935,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>LEFT HOPPER TEMPERATURE:</string>
@@ -3936,7 +3959,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>RIGHT HOPPER TEMPERATURE:</string>
@@ -4009,6 +4032,9 @@ border-radius: 10px;  /* Change the value as needed */
            <height>71</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
+         </property>
          <property name="text">
           <string>LEFT HOPPER 
  POWDER HEATER</string>
@@ -4022,6 +4048,9 @@ border-radius: 10px;  /* Change the value as needed */
            <width>111</width>
            <height>71</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>RIGHT HOPPER 
@@ -4040,7 +4069,7 @@ border-radius: 10px;  /* Change the value as needed */
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */</string>
         </property>
         <property name="frameShape">
@@ -4067,7 +4096,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>LEFT HOPPER CONTROL</string>
@@ -4091,7 +4120,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -4115,7 +4144,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>STEP-SIZE:</string>
@@ -4182,7 +4211,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>CURRENT POSITION:</string>
@@ -4214,7 +4243,7 @@ color: rgb(0, 0, 0);</string>
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */</string>
         </property>
         <property name="frameShape">
@@ -4265,7 +4294,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>DISTANCE:</string>
@@ -4289,7 +4318,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>STEP-SIZE:</string>
@@ -4356,7 +4385,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>CURRENT POSITION:</string>
@@ -4387,7 +4416,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
         </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(85, 255, 255);
-background-color: rgb(0,0,0);
+background-color: rgb(3, 96, 106);
 border-radius: 10px;  /* Change the value as needed */
 </string>
         </property>
@@ -4415,7 +4444,7 @@ border-radius: 10px;  /* Change the value as needed */
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px </string>
+          <string notr="true">border: 0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255)); </string>
          </property>
          <property name="text">
           <string>SENSOR DATA</string>
@@ -4443,8 +4472,8 @@ border-radius: 10px;  /* Change the value as needed */
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(255,255,255);
-border: 0px 
-</string>
+border: 0px; 
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
         </property>
         <property name="text">
          <string>ENVIRONMENT MANAGEMENT</string>
@@ -4470,7 +4499,8 @@ border: 0px
         <property name="styleSheet">
          <string notr="true">border:0px;
 color: rgb(85, 0, 127);
-background-color: rgb(, 0, 0);</string>
+background-color: rgb(, 0, 0);border-color: rgb(85, 255, 255);
+</string>
         </property>
         <property name="text">
          <string>NITROGEN</string>
@@ -4484,6 +4514,10 @@ background-color: rgb(, 0, 0);</string>
           <width>191</width>
           <height>181</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="maximum">
          <number>1000</number>
@@ -4506,6 +4540,10 @@ background-color: rgb(, 0, 0);</string>
           <width>191</width>
           <height>181</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="maximum">
          <number>1000</number>
@@ -4607,6 +4645,9 @@ background-color: rgb(, 0, 0);</string>
            <family>Segoe MDL2 Assets</family>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
+         </property>
          <property name="text">
           <string>THERMAL CAMERA</string>
          </property>
@@ -4622,7 +4663,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4643,6 +4685,9 @@ background-color: rgb(, 0, 0);</string>
           <font>
            <family>Segoe MDL2 Assets</family>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>NITROGEN CONTROL</string>
@@ -4675,7 +4720,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4696,6 +4742,9 @@ background-color: rgb(, 0, 0);</string>
           <font>
            <family>Segoe MDL2 Assets</family>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>OXYGEN CONTROL</string>
@@ -4728,7 +4777,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4749,6 +4799,9 @@ background-color: rgb(, 0, 0);</string>
           <font>
            <family>Segoe MDL2 Assets</family>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>MOISTURE CONTROL</string>
@@ -4781,7 +4834,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4807,7 +4861,7 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px</string>
+          <string notr="true">border:0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>OFF</string>
@@ -4824,7 +4878,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4850,7 +4905,8 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px</string>
+          <string notr="true">border:0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));border-color: rgb(85, 255, 255);
+</string>
          </property>
          <property name="text">
           <string>START</string>
@@ -4867,7 +4923,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4893,7 +4950,8 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px</string>
+          <string notr="true">border:0px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));border-color: rgb(85, 255, 255);
+</string>
          </property>
          <property name="text">
           <string>RESET</string>
@@ -4910,7 +4968,8 @@ background-color: rgb(, 0, 0);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4932,6 +4991,9 @@ background-color: rgb(, 0, 0);</string>
            <family>Segoe MDL2 Assets</family>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
+         </property>
          <property name="text">
           <string>CHILLER</string>
          </property>
@@ -4951,7 +5013,7 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;</string>
+          <string notr="true">BORDER:0PX;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>STATUS:</string>
@@ -4993,7 +5055,7 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;</string>
+          <string notr="true">BORDER:0PX;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>LASER TEMPERATURE:</string>
@@ -5014,7 +5076,7 @@ background-color: rgb(, 0, 0);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;</string>
+          <string notr="true">BORDER:0PX;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>SCANNER TEMPERATURE:</string>
@@ -5070,7 +5132,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;</string>
+          <string notr="true">BORDER:0PX;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>LASER THRESHOLD:</string>
@@ -5091,7 +5153,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;</string>
+          <string notr="true">BORDER:0PX;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>SCANNER THRESHOLD:</string>
@@ -5147,7 +5209,7 @@ background-color: rgb(255, 255, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:10px;</string>
+          <string notr="true">border-radius:10px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));</string>
          </property>
          <property name="text">
           <string>ON/OFF</string>
@@ -5162,6 +5224,10 @@ background-color: rgb(255, 255, 255);</string>
           <width>191</width>
           <height>181</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(85, 255, 255);
+background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="maximum">
          <number>1000</number>
@@ -5191,7 +5257,7 @@ background-color: rgb(255, 255, 255);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:10px;</string>
+         <string notr="true">border-radius:10px;color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));background-color: rgb(3, 96, 106);</string>
         </property>
         <property name="text">
          <string>DOOR: OPEN/CLOSED</string>
@@ -5235,6 +5301,8 @@ background-color: rgb(255, 255, 255);</string>
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
 border-radius:10px;
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));
+background-color: rgb(3, 96, 106);
 
 </string>
       </property>
@@ -5262,7 +5330,8 @@ border-radius:10px;
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
 border-radius:10px;
-</string>
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));
+background-color: rgb(3, 96, 106);</string>
       </property>
       <property name="text">
        <string>RECOATER </string>
@@ -5288,7 +5357,8 @@ border-radius:10px;
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
 border-radius:10px;
-</string>
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));
+background-color: rgb(3, 96, 106);</string>
       </property>
       <property name="text">
        <string>HOPPER</string>
@@ -5314,7 +5384,8 @@ border-radius:10px;
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
 border-radius:10px;
-</string>
+color: qlineargradient(spread:pad, x1:0.721, y1:0.788955, x2:1, y2:0.176136, stop:0 rgba(23, 205, 255, 255), stop:1 rgba(187, 255, 245, 255));
+background-color: rgb(3, 96, 106);</string>
       </property>
       <property name="text">
        <string>ENVIRONMENT</string>
@@ -5333,7 +5404,7 @@ border-radius:10px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1920</width>
+     <width>1900</width>
      <height>21</height>
     </rect>
    </property>
