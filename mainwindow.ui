@@ -468,7 +468,7 @@ border: 1px solid rgb(255, 255, 255);
        <number>5</number>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QFrame" name="frame_2">
@@ -578,7 +578,7 @@ border-radius: 10px;  /* Change the value as needed */
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_18">
@@ -615,7 +615,7 @@ border-radius: 10px;  /* Change the value as needed */
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="ZmotorOk">
@@ -864,7 +864,7 @@ background-color: rgb(255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_80">
@@ -901,7 +901,7 @@ background-color: rgb(255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;
 color: rgb(0, 0, 0);</string>
          </property>
         </widget>
@@ -939,7 +939,7 @@ color: rgb(0, 0, 0);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="ZmotorZeroLabel">
@@ -1205,7 +1205,7 @@ border-radius: 10px;  /* Change the value as needed */
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px; color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px; color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="ZaxisDown">
@@ -1218,7 +1218,7 @@ border-radius: 10px;  /* Change the value as needed */
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="ZaxisOk">
@@ -1430,7 +1430,7 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_116">
@@ -1467,7 +1467,7 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_117">
@@ -1504,7 +1504,7 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="ZaxisHome">
@@ -1910,7 +1910,7 @@ border: 0px
          <property name="styleSheet">
           <string notr="true">color: rgb(0,0,0);
 background-color: rgb(255, 255, 255);border: 0px ;
-border-radius:0px;
+border-radius:10px;
 </string>
          </property>
         </widget>
@@ -1924,7 +1924,7 @@ border-radius:0px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px ;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="VolumeTempIn">
@@ -1937,7 +1937,7 @@ border-radius:0px;
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_101">
@@ -3495,7 +3495,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
         <widget class="QLineEdit" name="LHopperDownStep">
@@ -3508,7 +3508,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px; color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px; color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_84">
@@ -3746,7 +3746,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
         <widget class="QLineEdit" name="RHopperDownStep">
@@ -3759,7 +3759,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
        </widget>
@@ -4131,7 +4131,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
         <widget class="QLineEdit" name="LHopperNum">
@@ -4144,7 +4144,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px; color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px; color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="LHopperMove">
@@ -4198,7 +4198,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px; 
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px; 
 color: rgb(0, 0, 0);</string>
          </property>
         </widget>
@@ -4305,7 +4305,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
         <widget class="QLineEdit" name="RHopperNum">
@@ -4318,7 +4318,7 @@ border-radius: 10px;  /* Change the value as needed */</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px; color: rgb(0, 0, 0);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px; color: rgb(0, 0, 0);</string>
          </property>
         </widget>
         <widget class="QPushButton" name="RHopperMove">
@@ -4372,7 +4372,7 @@ color: rgb(0, 0, 0);border: 0px;border-radius: 0px; </string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 0px;color: rgb(0, 0, 0); </string>
+          <string notr="true">background-color: rgb(255, 255, 255);border: 0px;border-radius: 10px;color: rgb(0, 0, 0); </string>
          </property>
         </widget>
        </widget>
@@ -4584,6 +4584,9 @@ background-color: rgb(, 0, 0);</string>
           <height>391</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
+        </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
         </property>
@@ -4617,6 +4620,9 @@ background-color: rgb(, 0, 0);</string>
           <width>161</width>
           <height>281</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4668,6 +4674,9 @@ background-color: rgb(, 0, 0);</string>
           <height>281</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
+        </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
         </property>
@@ -4717,6 +4726,9 @@ background-color: rgb(, 0, 0);</string>
           <width>151</width>
           <height>281</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -4892,10 +4904,13 @@ background-color: rgb(, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>960</x>
-          <y>570</y>
+          <y>550</y>
           <width>421</width>
           <height>281</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -5015,8 +5030,9 @@ background-color: rgb(, 0, 0);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;
-background-color: rgb(255, 255, 255);</string>
+          <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);
+</string>
          </property>
          <property name="text">
           <string/>
@@ -5032,7 +5048,7 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">BORDER:0PX;
+          <string notr="true">border-radius: 10px;
 background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
@@ -5130,6 +5146,9 @@ background-color: rgb(255, 255, 255);</string>
            <pointsize>16</pointsize>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:10px;</string>
+         </property>
          <property name="text">
           <string>ON/OFF</string>
          </property>
@@ -5170,6 +5189,9 @@ background-color: rgb(255, 255, 255);</string>
          <font>
           <pointsize>12</pointsize>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;</string>
         </property>
         <property name="text">
          <string>DOOR: OPEN/CLOSED</string>
@@ -5212,6 +5234,7 @@ background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
+border-radius:10px;
 
 </string>
       </property>
@@ -5238,6 +5261,7 @@ background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
+border-radius:10px;
 </string>
       </property>
       <property name="text">
@@ -5263,6 +5287,7 @@ background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
+border-radius:10px;
 </string>
       </property>
       <property name="text">
@@ -5288,6 +5313,7 @@ background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border: 2px solid rgb(85, 255, 255);
+border-radius:10px;
 </string>
       </property>
       <property name="text">
