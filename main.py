@@ -20,18 +20,18 @@ class GUI(QMainWindow):
         # self.label_4.setStyleSheet("background-image: url('C:\\Users\\NetFabb\PycharmProjects\purple_laser.jpg'); background-repeat: no-repeat;")
         pixmap = QPixmap('purple_laser.jpg')
 
-        # API
+        # API Initialisation
         self.api_endpoint = "10.114.56.128"
         self.params = {"apikey": 'B508534ED20348F090B4D0AD637D3660'}
 
-        self.label_4.setPixmap(pixmap)
+        self.label_4.setPixmap(pixmap)     #setting the background for the login screen
         self.label_4.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
         self.show()
 
-        self.pushButton.clicked.connect(self.login)
+        self.pushButton.clicked.connect(self.login)        #Connecting to the main window
 
-    def switch_screen(self, index):
+    def switch_screen(self, index):                          #Function to assign the buttons to corresponding screens in stacked widget
         if index < self.MainWindow.stackedWidget.count():
             screen = self.MainWindow.stackedWidget.widget(index)
             self.MainWindow.stackedWidget.setCurrentWidget(screen)
@@ -41,13 +41,13 @@ class GUI(QMainWindow):
             print("Successful login")
             self.close()
             self.MainWindow = uic.loadUi("mainwindow.ui")
-            self.MainWindow.pushButton_4.clicked.connect(lambda: self.switch_screen(0))
+            self.MainWindow.pushButton_4.clicked.connect(lambda: self.switch_screen(0))       #Assigning screens for Hopper, Zaxis .. buttons
             self.MainWindow.pushButton_5.clicked.connect(lambda: self.switch_screen(1))
             self.MainWindow.pushButton_6.clicked.connect(lambda: self.switch_screen(2))
             self.MainWindow.pushButton_10.clicked.connect(lambda: self.switch_screen(3))
 
             # PARAMETERS
-            self.BedTempFlag = False
+            self.BedTempFlag = False                        # Initialising supporting variables
             self.VolumeTempFlag = False
             self.RHopperTempFlag = False
             self.LHopperTempFlag = False
@@ -61,7 +61,7 @@ class GUI(QMainWindow):
             self.RHopperTemperature = None
 
             #LEFT HOPPER
-            self.MainWindow.LHopperMove.clicked.connect(lambda: self.move_Lhopper("move"))
+            self.MainWindow.LHopperMove.clicked.connect(lambda: self.move_Lhopper("move"))                  #LHopperMove,LHopperMUp... correspond to button/utilities names as assigned in the Ui file
             self.MainWindow.LHopperMUp.clicked.connect(lambda: self.move_Lhopper("out"))
             self.MainWindow.LHopperMDown.clicked.connect(lambda: self.move_Lhopper("in"))
             self.MainWindow.LHopperHome.clicked.connect(lambda: self.move_Lhopper("home"))
@@ -76,7 +76,8 @@ class GUI(QMainWindow):
 
 
             # Z-AXIS
-            self.slider_value = 0
+            self.slider_value = 0                  # Variable to update the Slider associated to Z Axis movement
+
             # LOADING MOTOR
             self.MainWindow.ZmotorOk.clicked.connect(lambda: self.moveLoadingMotor(True))
             self.MainWindow.ZmotorUp.clicked.connect(lambda: self.moveLoadingMotor(False, "up"))
@@ -87,7 +88,7 @@ class GUI(QMainWindow):
             # Z-AXIS MOTOR
             self.MainWindow.ZaxisOk.clicked.connect(lambda: self.moveZaxis(True))
             self.MainWindow.ZaxisStepUp.clicked.connect(lambda: self.moveZaxis(False, "up"))
-            self.MainWindow.ZaxisStepDown.clicked.connect(lambda: self.moveZaxis(False, "Down"))
+            self.MainWindow.ZaxisStepDown.clicked.connect(lambda: self.moveZaxis(False, "down"))
             self.MainWindow.ZaxisHome.clicked.connect(lambda: self.moveZaxis(False, "home"))
             self.MainWindow.ZaxisZero.clicked.connect(lambda: self.moveZaxis(False, "zero"))
 
@@ -120,12 +121,12 @@ class GUI(QMainWindow):
         self.update_parameters()
         print(self.slider_value)
 
-        if not auto:
+        if not auto:   # Auto is used when the user sends signal via buttons instead of input
             try:
-                ZmStepUp = self.MainWindow.ZmotorUpStepSize.text()
+                ZmStepUp = self.MainWindow.ZmotorUpStepSize.text()         #Reading user input
                 ZmStepDown = self.MainWindow.ZmotorDownStepSize.text()
 
-                if ZmStepUp == "":
+                if ZmStepUp == "":             # If user input is empty then assigning default value
                     ZmStepUp = STEP_SIZE
 
                 if ZmStepDown == "":
@@ -183,7 +184,7 @@ class GUI(QMainWindow):
             except:
                 pass
 
-        else:
+        else:         # Used when user enters vales like speed, direction, distance etc and calls the function
             try:
                 self.speed = self.MainWindow.ZmotorSpeed.text()
                 self.moveTo = self.MainWindow.ZmotorTo.text()
@@ -198,7 +199,7 @@ class GUI(QMainWindow):
             except:
                 pass
 
-        if self.slider_value < 25 :
+        if self.slider_value < 25 :            # To change the color of the utility corresponding to the limit switches
             self.MainWindow.Zsens0.setStyleSheet("background-color: black")
             self.MainWindow.Zsens1.setStyleSheet("background-color: black")
             self.MainWindow.Zsens2.setStyleSheet("background-color: black")
@@ -234,7 +235,7 @@ class GUI(QMainWindow):
 
         self.update_parameters()
 
-    def moveZaxis(self, auto, direction=""):
+    def moveZaxis(self, auto, direction=""):  # Pretty much same as the above function
         self.update_parameters()
         print(self.slider_value)
 
@@ -354,7 +355,7 @@ class GUI(QMainWindow):
 
         self.update_parameters()
 
-    def update_temperature(self):
+    def update_temperature(self):                    # Function to update the temperature values of volume and chamber - it is an middle function
         self.update_parameters()
         print(self.MainWindow.BedTempIn.text(), self.MainWindow.VolumeTempIn.text(),
               self.MainWindow.ChamberTempIn.text())
@@ -362,7 +363,7 @@ class GUI(QMainWindow):
         voltemp = int(self.MainWindow.VolumeTempIn.text())
         chambertemp = int(self.MainWindow.ChamberTempIn.text())
 
-        if bedtemp == "":
+        if bedtemp == "":                 # If no user input then takes default value
             bedtemp = self.currentBedTemp
         if voltemp == "":
             voltemp = self.currentVolTemp
@@ -375,12 +376,12 @@ class GUI(QMainWindow):
         self.VolumeHeating(False, voltemp)
         self.ChamberHeating(False, chambertemp)
 
-    def BedHeating(self, direct, bedtemp=""):
+    def BedHeating(self, direct, bedtemp=""):         # Function to control bed heating process, direct is used to different between direct button actuation and user input actuation
         self.update_parameters()
         print("After update parameters")
         if not self.BedTempFlag:
             self.BedTempFlag = True
-            self.MainWindow.BedHeater.setStyleSheet("background-color: green")
+            self.MainWindow.BedHeater.setStyleSheet("background-color: green")       # Changing the color of the button
         else:
             self.BedTempFlag = False
             self.MainWindow.BedHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")  # RED:rgb(160,0,50)
@@ -400,7 +401,7 @@ class GUI(QMainWindow):
             except:
                 pass
 
-    def VolumeHeating(self, direct, voltemp=''):
+    def VolumeHeating(self, direct, voltemp=''):  # Similar to above function
         self.update_parameters()
         print("after vloume heater update")
         if not self.VolumeTempFlag:
@@ -419,7 +420,7 @@ class GUI(QMainWindow):
         except:
             pass
 
-    def ChamberHeating(self, direct, chambertemp=''):
+    def ChamberHeating(self, direct, chambertemp=''):  # Same
         print("inside chamber")
         self.update_parameters()
         if not self.ChamberTempFlag:
@@ -445,7 +446,7 @@ class GUI(QMainWindow):
             pass
         self.update_parameters()
 
-    def Roller(self):
+    def Roller(self):      # Function to control ROller mechanics
         if self.MainWindow.RollerDir.text() == "":
             direction = DIRECTION
         else:
@@ -456,7 +457,7 @@ class GUI(QMainWindow):
         else:
             rpm = self.MainWindow.RollerRpm.text()
 
-    def update_parameters(self):
+    def update_parameters(self):         # Main function to update the values of all parameters displayed in the GUI
         pass
         # try:
         #     # BED TEMPERATURE
@@ -502,9 +503,9 @@ class GUI(QMainWindow):
         # except:
         #     pass
 
-    def move_Lhopper(self,move):
+    def move_Lhopper(self,move):      # Function associated with Left Hopper
         self.update_parameters()
-        if move == 'move':
+        if move == 'move':    # IS move == 'move' then user has used the move button
 
             #From the Input
             print(self.MainWindow.LHopperAstep.text(),self.MainWindow.LHopperNum.text())
@@ -522,7 +523,7 @@ class GUI(QMainWindow):
             # request.raise_for_status()
 
 
-        else:
+        else:   # Else user has used the direct buttons to control the hopper
             close_distance = self.MainWindow.LHopperDownStep.text()
             open_distance = self.MainWindow.LHopperUpStep.text()
             if move == 'home':
@@ -550,7 +551,7 @@ class GUI(QMainWindow):
                 # request.raise_for_status()
 
         self.update_parameters()
-    def move_Rhopper(self,move):
+    def move_Rhopper(self,move):  # Function associated with right hopper, pretty much same as the above function
         self.update_parameters()
         if move == 'move':
 
@@ -598,11 +599,11 @@ class GUI(QMainWindow):
                 # request.raise_for_status()
 
         self.update_parameters()
-    def hopperTemperatureControl(self,hopper):
+    def hopperTemperatureControl(self,hopper):  # Function to handle the temperature of the hopper sub-block
         if hopper == "left":
             if self.LHopperTempFlag == False:
                 self.LHopperTempFlag = True
-                self.MainWindow.LHopperHeater.setStyleSheet("background-color: green")
+                self.MainWindow.LHopperHeater.setStyleSheet("background-color: green") # Changing the color of the buttons
             else:
                 self.LHopperTempFlag = False
                 self.MainWindow.LHopperHeater.setStyleSheet("background-color: rgb(rgb(3, 96, 106)")
