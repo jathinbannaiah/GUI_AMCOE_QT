@@ -656,17 +656,30 @@ color: rgb(0, 0, 0);border: 0px ;border-radius: 0px;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px ;
+          <string notr="true">border: 10px ;
+border_radius:10px;
 background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
          </property>
          <property name="text">
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>up-fractol.png</pixmap>
+          <pixmap>myarrowup (1).png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignJustify|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_22">
@@ -686,10 +699,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>down_fractol.png</pixmap>
+          <pixmap>myarrowdown.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QPushButton" name="ZmotorUp">
@@ -708,7 +724,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -731,7 +747,7 @@ background-color: rgb(255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -812,10 +828,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>home_fractol.png</pixmap>
+          <pixmap>myarrowhome.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QPushButton" name="ZmotorHome">
@@ -834,7 +853,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);;
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -970,10 +989,16 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>zero.svg</pixmap>
+          <pixmap>myarrowzero.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+         <property name="indent">
+          <number>-1</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_110">
@@ -1024,7 +1049,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -1267,10 +1292,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>up-fractol.png</pixmap>
+          <pixmap>myarrowup (1).png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_20">
@@ -1290,10 +1318,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>down_fractol.png</pixmap>
+          <pixmap>myarrowdown.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QPushButton" name="ZaxisStepUp">
@@ -1312,9 +1343,9 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);
-border-radius: 0px;</string>
+</string>
          </property>
          <property name="text">
           <string/>
@@ -1323,8 +1354,8 @@ border-radius: 0px;</string>
         <widget class="QPushButton" name="pushButton_11">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>440</y>
+           <x>60</x>
+           <y>450</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -1353,7 +1384,7 @@ background-color: rgb(255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -1402,10 +1433,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>home_fractol.png</pixmap>
+          <pixmap>myarrowhome.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_78">
@@ -1535,7 +1569,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -1559,10 +1593,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>zero.svg</pixmap>
+          <pixmap>myarrowzero.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_79">
@@ -1629,7 +1666,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>2</number>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(255, 255);</string>
          </property>
          <property name="text">
@@ -2558,10 +2595,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>home_fractol.png</pixmap>
+          <pixmap>myarrowhome.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_113">
@@ -2581,10 +2621,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>left_fractol.png</pixmap>
+          <pixmap>myarrowright.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_114">
@@ -2604,10 +2647,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>right-fractol.png</pixmap>
+          <pixmap>myarrowleft.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_121">
@@ -2627,10 +2673,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>pause.png</pixmap>
+          <pixmap>myarrowpause.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_81">
@@ -2711,6 +2760,70 @@ background-color: rgb(255, 255, 255);border-radius: 10px;
 color:rgb(0,0,0);</string>
          </property>
         </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>290</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>350</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>470</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_19">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>410</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
         <zorder>label_31</zorder>
         <zorder>label_32</zorder>
         <zorder>label_33</zorder>
@@ -2730,6 +2843,10 @@ color:rgb(0,0,0);</string>
         <zorder>lineEdit_33</zorder>
         <zorder>label_82</zorder>
         <zorder>lineEdit_34</zorder>
+        <zorder>pushButton_2</zorder>
+        <zorder>pushButton_8</zorder>
+        <zorder>pushButton_12</zorder>
+        <zorder>pushButton_19</zorder>
        </widget>
        <widget class="QFrame" name="frame_5">
         <property name="geometry">
@@ -2815,52 +2932,6 @@ color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);border-radius: 10px;</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_125">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>410</y>
-           <width>51</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px;
-background-color: rgb(0,0,0);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>brake.jpg</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_126">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>470</y>
-           <width>51</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px;
-background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>stop.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
         <widget class="QPushButton" name="RollerStart">
          <property name="geometry">
           <rect>
@@ -2884,7 +2955,7 @@ border-radius:10px
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>470</y>
+           <y>480</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -2901,7 +2972,7 @@ background-color: rgb( 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>410</y>
+           <y>420</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -3025,57 +3096,11 @@ background-color: rgb(255, 255, 255);border-radius: 10px;</string>
           <string notr="true">border:0px</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_129">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>290</y>
-           <width>51</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px;
-background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>clockwise.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_130">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>350</y>
-           <width>51</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 0px;
-background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>anticlock.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
         <widget class="QPushButton" name="RollerForward">
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>290</y>
+           <y>300</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -3093,7 +3118,7 @@ border-radius:10px;</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>350</y>
+           <y>360</y>
            <width>51</width>
            <height>41</height>
           </rect>
@@ -3142,23 +3167,150 @@ color: rgb(0, 0, 0);</string>
           <string>set</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_58">
+        <widget class="QPushButton" name="pushButton_13">
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>230</y>
+           <y>240</y>
            <width>51</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_137">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>240</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>play.jpg</pixmap>
+          <pixmap>myarrowplay.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_129">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>300</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>myarrowclockwise.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_138">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>360</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>myarrowcanticlockwise.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_139">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>420</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>mybrakeNojerk.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_140">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>480</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>myinstantbrake.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
        </widget>
@@ -3356,10 +3508,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>up-fractol.png</pixmap>
+          <pixmap>myarrowup (1).png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_72">
@@ -3379,10 +3534,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>down_fractol.png</pixmap>
+          <pixmap>myarrowdown.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QPushButton" name="LHopperMUp">
@@ -3395,9 +3553,10 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
+
 background-color: rgb(, 255, 255);
-border-radius:0px;</string>
+</string>
          </property>
          <property name="text">
           <string/>
@@ -3413,7 +3572,7 @@ border-radius:0px;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border: 0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(, 255, 255);</string>
          </property>
          <property name="text">
@@ -3437,10 +3596,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>home_fractol.png</pixmap>
+          <pixmap>myarrowhome.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QPushButton" name="LHopperHome">
@@ -3453,7 +3615,7 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(, 255, 255);</string>
          </property>
          <property name="text">
@@ -3551,10 +3713,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>up-fractol.png</pixmap>
+          <pixmap>myarrowup (1).png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_85">
@@ -3574,10 +3739,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>down_fractol.png</pixmap>
+          <pixmap>myarrowdown.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="h_home_label_2">
@@ -3597,10 +3765,13 @@ background-color: rgb(255, 255, 255);</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>home_fractol.png</pixmap>
+          <pixmap>myarrowhome.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>3</number>
          </property>
         </widget>
         <widget class="QLabel" name="label_37">
@@ -3645,7 +3816,7 @@ color: rgb(0, 0, 0);
          <property name="geometry">
           <rect>
            <x>60</x>
-           <y>280</y>
+           <y>290</y>
            <width>21</width>
            <height>20</height>
           </rect>
@@ -3653,7 +3824,7 @@ color: rgb(0, 0, 0);
          <property name="styleSheet">
           <string notr="true">border:0;
 background-color: rgb(, 255, 255);
-color: rgb(0, 0, 0);
+color: rgb(0,0,0);
 </string>
          </property>
          <property name="text">
@@ -3670,7 +3841,7 @@ color: rgb(0, 0, 0);
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(, 255, 255);</string>
          </property>
          <property name="text">
@@ -3687,7 +3858,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(, 255, 255);</string>
          </property>
          <property name="text">
@@ -3704,7 +3875,7 @@ background-color: rgb(, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:0px;
+          <string notr="true">border-color: rgb(85, 255, 255);
 background-color: rgb(, 255, 255);</string>
          </property>
          <property name="text">
